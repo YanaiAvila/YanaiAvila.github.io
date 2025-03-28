@@ -201,3 +201,75 @@
 .button:active {
     transform: translateY(1px); /* Slight downward movement when clicked */
 }
+
+
+
+
+
+
+
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 50px 10%;
+    background: #f5f5f5; /* Light gray background */
+}
+
+/* Grid Layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Project Card */
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Project Title */
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* See More Button */
+.see-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #29364d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.see-more:hover {
+    background: #45a049;
+}
