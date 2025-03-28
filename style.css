@@ -182,7 +182,7 @@
 .button {
     display: inline-block;
     padding: 10px 20px; /* Adjust padding for button size */
-    background-color: #29364d; /* Green background */
+    background-color: #29364d; 
     color: white; /* White text color */
     text-align: center; /* Center the text inside the button */
     font-size: 16px;
@@ -288,7 +288,6 @@
 
 
 
-
 /* Playlists Section */
 .playlists {
     text-align: center;
@@ -367,7 +366,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 /* Footer Text */
@@ -414,4 +413,128 @@ footer p {
 .footer-contact p {
     font-size: 12px;
     margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*INDIVIDUAL PROJECT PAGES*/
+
+/* Embedded Video Section */
+.project-video {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #121212; /* Dark background for video section */
+    border-radius: 10px;
+}
+
+.project-video iframe {
+    width: 100%;
+    height: 450px; /* You can adjust based on the aspect ratio */
+    border: none;
+    border-radius: 10px;
+}
+
+/* Buttons Section (Reports, Code, etc.) */
+.project-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.project-buttons .button {
+    padding: 10px 20px;
+    background-color: #29364d;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.project-buttons .button:hover {
+    background-color: #f1c40f;
+    transform: translateY(-3px);
+}
+
+/* Project Description Section */
+.project-description {
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+
+/* Make it Responsive */
+@media (max-width: 768px) {
+    .project-video iframe {
+        height: 300px;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+}
+
+
+/* Return to Home Button */
+.return-home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #29364d; /* Dark text color */
+    text-decoration: underline;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: fit-content; /* Ensures the button is only as wide as its content */
+    margin-left: auto; /* Centers the button */
+    margin-right: auto; /* Centers the button */
+}
+
+/* Home Icon Style */
+.return-home-button i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+}
+
+/* Hover effect */
+.return-home-button:hover {
+    background-color: #29364d; /* Dark background on hover */
+    color: white; /* White text color */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+/* Active effect */
+.return-home-button:active {
+    transform: translateY(1px); /* Slight downward movement when clicked */
 }
