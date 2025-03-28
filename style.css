@@ -31,7 +31,7 @@
 
 .banner h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 15px; /* Space between name and icons */
     z-index: 1; /* Keep text above the background */
@@ -272,4 +272,129 @@
 
 .see-more:hover {
     background: #45a049;
+}
+
+
+
+
+
+
+
+
+/* Playlists Section */
+.playlists {
+    text-align: center;
+    padding: 50px 10%;
+    background: #f5f5f5;
+}
+
+/* Grid Layout */
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Playlist Card */
+.playlist-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.playlist-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Thumbnail Styling */
+.playlist-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Watch Button */
+.watch-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #29364d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.watch-button:hover {
+    background: #45a049;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background: #29364d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Footer Text */
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Footer Links */
+.footer-links {
+    margin-top: 15px;
+    margin-bottom: 20px; /* Space between links and contact */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: #f1c40f;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f1c40f;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* Contact Info Styling */
+.footer-contact p {
+    font-size: 12px;
+    margin: 5px 0;
 }

@@ -11,8 +11,22 @@
 </head>
 <body>
 
+
+  
+<!-- Navigation Bar --
+<nav class="navbar">
+  <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#playlists">Playlists</a></li>
+  </ul>
+</nav>
+>
+
+
    <!-- Banner section -->
-  <div class="banner">
+  <div id="home" class="banner">
     <h1>Yanai Avila</h1>
     <div class="social-links">
       <a href="mailto:yanai.avila@gmail.com" target="_blank">
@@ -32,13 +46,10 @@
         <p>Email: yanai.avila@gmail.com</p>
         <p>Phone: (702)680-5271</p>
       </div>
-
-
-
   </div>
 
   <!-- About Me section -->
-  <section class="about">
+  <section id="about" class="about">
     <div class="about-container">
         <img src="Images/Portrait.jpg" alt="Portrait" class="portrait">
         <div class="about-text">
@@ -72,7 +83,7 @@
 </section>
 
 
-<section class="projects">
+<section id="projects" class="projects">
   <h2>Projects</h2>
 
   <div class="project-grid">
@@ -113,21 +124,59 @@
 </section>
 
 
+<section id="playlists" class="playlists">
+  <h2>Course Video Playlists</h2>
 
+  <div class="embedded-playlist">
+      <h3> Embedded Systems and Design </h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLAhMgX9etoIXl0SlaXiBarEegtsCbnWtW" frameborder="0" allowfullscreen></iframe>
+  </div>
 
+  <div class="embedded-playlist">
+      <h3>Mobile Robotics</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLAhMgX9etoIVTYKJGUNNyhddnwD7FClzl" frameborder="0" allowfullscreen></iframe>
+  </div>
 
-    <div class="container">
-      
-    <h2> UNLV Course Assignments/Projects Videos</h2>
-    <a href="https://www.youtube.com/playlist?list=PLCIHW1W52oBexxrkgyzyYbpD3rHrOGDUK"> Embedded Systems and Design<br/></a>
-    <a href="https://www.youtube.com/playlist?list=PLAhMgX9etoIVTYKJGUNNyhddnwD7FClzl"> Mobile Robotics<br/></a>
-    <a href="https://www.youtube.com/playlist?list=PLAhMgX9etoIW5hqnmhzKh0BnnYPqfYhmp"> Internet of Things<br/></a>
-    <a href="https://www.youtube.com/playlist?list=PLAhMgX9etoIV2tXUoNLzP8xhdpdGXHoR7"> Embedded Systems and Design Lab<br/></a>
-      
-      
-    </div>
-    <br/>
-    <br/>
+  <div class="embedded-playlist">
+    <h3>Internet of Things</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLAhMgX9etoIW5hqnmhzKh0BnnYPqfYhmp" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="embedded-playlist">
+    <h3>Embedded Systems and Design Lab</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLAhMgX9etoIV2tXUoNLzP8xhdpdGXHoR7" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
 </body>
+
+
+
+<footer>
+  <p>© 2024 Yanai Avila</p>
+  <p>Designed & built from scratch using HTML & CSS.</p>
+
+  <!-- Footer Quick Links -->
+  <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#playlists">Playlists</a>
+  </div>
+
+
+  <div class="footer-contact">
+    <p>Email: yanai.avila@gmail.com</p>
+    <p>Phone: (702)680-5271</p>
+  </div>
+
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top">Back to Top ↑</a>
+
+
+</footer>
+
+
+
 </html>
 
