@@ -1,0 +1,203 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;                 /*100vh; Full screen height */
+    background: url('Images/banner.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.7); /* Adjust opacity (0.5 = 50% transparency) */
+    z-index: 0; /* Keep the overlay behind the text */
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 15px; /* Space between name and icons */
+    z-index: 1; /* Keep text above the background */
+}
+
+
+
+
+
+
+/* Social Icons in Banner */
+.social-links {
+    position: relative;
+    display: flex;
+    gap: 30px; /* Space between icons */
+    justify-content: center;
+    z-index: 1; /* Keep icons above the background */
+}
+
+/* Styling for the anchor (icon + text) */
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 16px; /* Adjust text size */
+    transition: transform 0.3s ease; /* Transition for movement */
+}
+
+/* Icon Styling */
+.social-links a i {
+    font-size: 40px;
+    color: white;
+    transition: transform 0.3s ease; /* Transition for movement */
+}
+
+/* Text below icons */
+.social-links a p {
+    margin-top: 5px; /* Space between icon and text */
+    font-size: 14px;
+    transition: transform 0.3s ease; /* Transition for movement */
+}
+
+/* Hover effect: both the icon and text move up */
+.social-links a:hover i,
+.social-links a:hover p {
+    transform: translateY(-5px); /* Move up by 5px */
+    color: #f1c40f; /* Change to any color */
+}
+
+
+
+
+/* Contact Info Styling (Email and Phone) */
+.contact-info {
+    text-align: center;
+    margin-top: 10px; /* Space from the icons */
+    color: white;
+    font-size: 12px; /* Small text size */
+    z-index: 2;
+    position: absolute; /* Positioned absolutely within the banner */
+    bottom: 10px; /* Position it at the bottom of the banner */
+    width: 100%; /* Ensure it spans the entire width */
+}
+
+/* Hover effect for contact info
+.contact-info p:hover {
+    transform: translateY(-2px);
+    color: #f1c40f;
+}
+
+*/
+
+
+
+
+
+
+/* About Me Section */
+.about {
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    gap: 50px;
+}
+
+/* Portrait Image */
+.portrait {
+    width: 250px; /* Adjust as needed */
+    height: 350px;
+    object-fit: cover; /* Keeps the image proportional */
+    border-radius: 0%; /* Makes it circular */
+}
+
+/* About Me Text */
+.about-text {
+    flex: 1; /* Allows text to take remaining space */
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portrait {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Button container */
+.buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    justify-content: center;
+    margin-top: 30px; /* Space from other elements */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for button size */
+    background-color: #29364d; /* Green background */
+    color: white; /* White text color */
+    text-align: center; /* Center the text inside the button */
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+/* Active effect */
+.button:active {
+    transform: translateY(1px); /* Slight downward movement when clicked */
+}

@@ -6,38 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>MAIN PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Yanai Avila Main Page</title>
 </head>
 <body>
-    <div class="container">
+
+   <!-- Banner section -->
+  <div class="banner">
     <h1>Yanai Avila</h1>
-    
-    <img src="Images/Portrait.jpg" width="200">
-    <p> Email: yanai.avila@gmail.com </p>
-    <p> Phone: 702-680-5271 </p>
-    <h2> About Me </h2>
-      <p> I recently graduated from the University of Nevada, Las Vegas with a 
-        <a href="/Files/Diploma-YanaiAvila.pdf" target="_blank"> B.S. in Computer Engineering</a>.
-  
+    <div class="social-links">
+      <a href="mailto:yanai.avila@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+        <p>Email</p>
+      <a href="https://www.linkedin.com/in/yanai-avila/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+          <p>LinkedIn</p>
+      </a>
+      <a href="https://github.com/YanaiAvila" target="_blank">
+        <i class="fab fa-github"></i>
+          <p>GitHub</p>
+      </a>
+  </div>
+      <!-- Email and Phone number under the icons -->
+      <div class="contact-info">
+        <p>Email: yanai.avila@gmail.com</p>
+        <p>Phone: (702)680-5271</p>
+      </div>
+
+
+
+  </div>
+
+  <!-- About Me section -->
+  <section class="about">
+    <div class="about-container">
+        <img src="Images/Portrait.jpg" alt="Portrait" class="portrait">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I recently graduated from the University of Nevada, Las Vegas with a 
+              <a href="/Files/Diploma-YanaiAvila.pdf" target="_blank"> B.S. in Computer Engineering</a>.
+        
+            
+              <br/><br/>
+              I was born and raised in Las Vegas, NV. I played the guitar and vihuela for 7 years of my
+              life in both my middle school and high school Mariachi groups. Towards the end of high school, 
+              I decided to join the robotics team and that is when I realized that I wanted to be an engineer. 
+              I quickly learned that 
+              I love the problem solving part of engineering. I like figuring things out and tinkering. I 
+              tried my best to take classes that were very hands on in college, and circuits, IOT, embedded 
+              systems, and robotics were among my favorites. 
+              <br/><br/>
+              I hope to gain experience with robotics and 
+              entertainment engineering as these are the things that make me excited about engineering.
+            </p>
       
-        <br/><br/>
-        I was born and raised in Las Vegas, NV. I played the guitar and vihuela for 7 years of my
-        life in both my middle school and high school Mariachi groups. Towards the end of high school, 
-        I decided to join the robotics team and that is when I realized that I wanted to be an engineer. 
-        I quickly learned that 
-        I love the problem solving part of engineering. I like figuring things out and tinkering. I 
-        tried my best to take classes that were very hands on in college, and circuits, IOT, embedded 
-        systems, and robotics were among my favorites. 
-        <br/><br/>
-        I hope to gain experience with robotics and 
-        entertainment engineering as these are the things that make me excited about engineering.
-      </p>
-    
-    <a href="/Files/Resume-YanaiAvila.pdf" target="_blank">Resume<br/></a>
-    <a href="/Files/CV-YanaiAvila.pdf" target="_blank">CV<br/></a>
-    <a href="https://www.linkedin.com/in/yanai-avila/"> LinkedIn Profile<br/></a>
-    <a href="/Files/Transcript-YanaiAvila.pdf" target="_blank">UNLV Transcript<br /></a>
-    
+            <!-- Resume, CV, and Transcript Buttons -->
+            <div class="buttons">
+              <a href="/Files/Resume-YanaiAvila.pdf" class="button" target="_blank">Resume<br/></a>
+              <a href="/Files/CV-YanaiAvila.pdf" class="button" target="_blank">CV<br/></a>
+              <a href="/Files/Transcript-YanaiAvila.pdf" class="button" target="_blank">UNLV Transcript<br /></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <div class="container">
+
       
     <h2> Projects </h2>
     
@@ -59,3 +95,4 @@
     <br/>
 </body>
 </html>
+
