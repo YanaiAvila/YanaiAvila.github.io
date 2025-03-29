@@ -6,29 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Microcontroller Systems Design Final Project</title>
 </head>
 <body>
-    <div class="container">
-    <h1>Competitive Mini Game </h1>
-    
-   <p>
-    For my CPE 301L Microcontroller Systems Design final project, I implemented an 
-    2-player competitive mini game that resembles the arcade game called Cyclone.
-    An LED moved back and forth between 7 LEDs, and the player has to press their 
-    designated button when the middle LED is lit up to score a point. The goal of 
-    the game is to get to 5 points before the other player.
+    <!-- Project Content Section -->
+    <section class="project-details">
+      
+      <section class="project-description">
+        <h2>Cyclone Competitive Mini Game</h2>
 
-    This project uses a timer to have the LEDs light up one after the other,
-    interrupts for then the players press their buttons, and USART communication to 
-    output the players' scores to the serial monitor.
-     
-    </p>
-    <a href="https://www.youtube.com/watch?v=jQchK2bIkzk"> Video <br/></a>
-    <a href="link.pdf"> Report<br /></a>
-    <a href="https://github.com/YanaiAvila/CPE301L/blob/main/CPE301L-Final-Project-Code.c" target="_blank">Code<br /></a>
-   
-    <a href="./"> <h2> Return to Home</h2></a>
-    </div>
+          <p>
+            <b> Course: </b> Microcontroller Systems Design Lab </br>
+            <b> Board Used:</b> UNLV 328P board (<a href="https://eelabs.faculty.unlv.edu/docs/guides/UNLV_328P_Board_Manual.pdf">board overview</a>) </br>
+            <b> Language: </b> C </br>
+            <b> Project Description: </b> For my final project, I implemented a 2-player competitive mini-game. 
+            This 2-player mini-game resembles the arcade game called Cyclone where a player needs to 
+            stop the cycling light when it reaches the indicated red LED. For my implementation, an LED 
+            flashes back and forth between 7 different LEDs and the player has to press a button when 
+            one of the LEDs in the middle turns on.  If the player presses their button when LED 5 is on, that 
+            player gains a point. Unlike in Cyclone where the difficulty increases with 
+            each round, my implementation allows the player to adjust the difficulty using a potentiometer.
+            This project uses a timer to have the LEDs light up one after the other,
+            interrupts for then the players press their buttons, and USART communication to 
+            output the players' scores to the serial monitor.
+            </p>
+      </section>
+
+      <section class="project-video">
+          <iframe src="https://www.youtube.com/embed/jQchK2bIkzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      
+      <!-- Project Resources -->
+      <section class="project-buttons">
+          <a href="/Files/CPE301L-Final-Project-Report.pdf" class="button"> Report </a>
+          <a href="https://github.com/YanaiAvila/CPE301L/blob/main/CPE301L-Final-Project-Code.c" target="_blank" class="button"> Code</a>
+      </section>
+
+      <!-- Return to Home Button -->
+      <a href="./" class="return-home-button">
+        <i class="fas fa-home"></i> Return to Home
+      </a>
+
+  </section>
 </body>
+
+
+<footer>
+  <p>© 2024 Yanai Avila</p>
+  <p>Designed & built from scratch using HTML & CSS.</p>
+
+
+  <div class="footer-contact">
+    <p>Email: yanai.avila@gmail.com</p>
+    <p>Phone: (702)680-5271</p>
+  </div>
+
+</footer>
 </html>
