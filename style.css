@@ -6,6 +6,16 @@
     font-family: Arial, sans-serif;
 }
 
+
+
+/* General */
+a {
+    color: var(--color-orange);
+
+}
+
+
+
 /* Banner Section */
 .banner {
     position: relative;
@@ -150,6 +160,18 @@
     line-height: 1.5;
 }
 
+.about-text a {
+    text-decoration: underline; /* Underline the link */
+    font-size: 1rem;
+    color: #29364d;
+    transition: color 0.3s ease;
+    text-underline-offset: 2px;
+}
+
+.about-text a:hover {
+    color: #ff9800;  
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
@@ -164,7 +186,38 @@
 }
 
 
+/* Document Links (Resume, CV, Transcript) */
+.document-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px; /* Space between links */
+    justify-content: center; /* Center the links */
+}
 
+.document-links a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: underline; /* Underlined links */
+    font-size: 1rem;
+    color: #29364d;
+    transition: color 0.3s ease;
+    text-underline-offset: 2px;
+}
+
+.document-links a i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem;
+    color: #29364d;
+    text-underline-offset: 0px;
+}
+
+.document-links a:hover {
+    color:#ff9800; /* White text on hover */
+}
+
+.about-text {
+    text-align: center; /* Centers the links under the about text */
+}
 
 
 
@@ -286,74 +339,101 @@
 
 
 
-
-
-/* Playlists Section */
+/* Videos Section */
 .playlists {
+    background-color: #f0f0f0; /* Light gray background for the full width */
+    padding: 20px 0; /* Adds padding on top and bottom */
+    color:#29364d; 
     text-align: center;
-    padding: 50px 10%;
-    background: #f5f5f5;
 }
 
-/* Grid Layout */
-.playlist-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.playlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid #29364d;  /* Light border to create the box */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    padding: 20px; /* Adds space inside the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #fff; /* White background for contrast */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+    width: 90%; /* Makes the box take up 90% of the width (or adjust as needed) */
+    max-width: 900px; /* Limits the width of the boxes */
+    margin: 20px auto; /* Centers the boxes horizontally */
 }
 
-/* Playlist Card */
-.playlist-card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+
+.playlist-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
 }
 
-.playlist-card:hover {
-    transform: translateY(-5px);
+/* Add padding and margin to the video and text to prevent content from touching the borders */
+.playlist-info, .playlist-video {
+    margin: 0;
+    padding: 0;
 }
 
-/* Thumbnail Styling */
-.playlist-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-    cursor: pointer;
+.playlist-info {
+    flex: 1;
+    text-align: left;
 }
 
-/* Watch Button */
-.watch-button {
-    display: inline-block;
+.playlist-info h3 {
+    margin-bottom: 10px;
+    color: #29364d;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.playlist-info p {
+    font-size: 14px;
+    color: #555;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+
+.resources {
     margin-top: 10px;
-    padding: 8px 15px;
-    background: #29364d;
-    color: white;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.resources a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    color: #29364d;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-.watch-button:hover {
-    background: #45a049;
+.resources a i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.resources a:hover {
+    color: #007bff; /* Blue hover effect */
+}
+
+.playlist-video {
+    flex: 1;
+}
+
+.playlist-video iframe {
+    width: 100%;
+    height: 250px;
 }
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .projects {
-        padding: 50px 5%; /* Adjust padding for smaller screens */
-    }
 
-    .project-card {
-        padding: 10px;
-    }
-}
+
+
+
 
 
 
